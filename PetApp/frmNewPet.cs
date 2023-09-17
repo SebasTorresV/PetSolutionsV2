@@ -52,16 +52,16 @@ namespace PetApp
                 MessageBox.Show("Nueva mascota registrada exitosamente.");
             }
 
-            //using (var db = new PetAppContext())
-            //{
-            //    var ClienteNew = new Cliente()
-            //    {
-            //      NombreCompleto = CbxNombre,
-            //    };
+            using (var db = new PetAppContext())
+            {
+                var ClienteNew = new Cliente()
+                {
+                    NombreCompleto = CbxNombre.Text
+                };
 
-            //    db.Cliente.Add(ClienteNew);
-            //    db.SaveChanges();
-            //}
+                db.Cliente.Add(ClienteNew);
+                db.SaveChanges();
+            }
 
 
 
