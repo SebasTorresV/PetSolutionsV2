@@ -61,6 +61,11 @@
     <Compile Include="ClientesxMascotas.cs">
       <DependentUpon>PetAppModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataNameDBCombo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataNameDBCombo.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +124,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PetAppDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PetAppDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PetAppDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PetAppDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PetAppDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PetAppModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -176,6 +191,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>PetAppModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="DataNameDBCombo.xsc">
+      <DependentUpon>DataNameDBCombo.xsd</DependentUpon>
+    </None>
+    <None Include="DataNameDBCombo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataNameDBCombo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataNameDBCombo.xss">
+      <DependentUpon>DataNameDBCombo.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="PetAppDataSet.xsc">
       <DependentUpon>PetAppDataSet.xsd</DependentUpon>
@@ -198,6 +224,28 @@
     </None>
     <None Include="PetAppDataSet1.xss">
       <DependentUpon>PetAppDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PetAppDataSet2.xsc">
+      <DependentUpon>PetAppDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PetAppDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PetAppDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PetAppDataSet2.xss">
+      <DependentUpon>PetAppDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PetAppDataSet3.xsc">
+      <DependentUpon>PetAppDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PetAppDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PetAppDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PetAppDataSet3.xss">
+      <DependentUpon>PetAppDataSet3.xsd</DependentUpon>
     </None>
     <None Include="PetAppModel.edmx.diagram">
       <DependentUpon>PetAppModel.edmx</DependentUpon>

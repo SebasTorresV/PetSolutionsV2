@@ -21,8 +21,6 @@ namespace PetApp
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-
-            #region Otro montón de Texto
             // Obtén los valores ingresados en los campos de texto y controles de fecha.
             string alias = txtAlias.Text;
             string especie = txtespecie.Text;
@@ -32,22 +30,25 @@ namespace PetApp
 
             // Verifica si alguno de los campos obligatorios está vacío.
             if (string.IsNullOrEmpty(alias) || string.IsNullOrEmpty(especie) || string.IsNullOrEmpty(raza)
-                || string.IsNullOrEmpty(color))
+                || string.IsNullOrEmpty(color) || CmbNombre.SelectedIndex == -1)
             {
-                MessageBox.Show("Por favor, complete todos los campos obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, complete todos los campos obligatorios y seleccione un nombre.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; // Salir del método si faltan campos obligatorios.
             }
 
-
             using (var db = new PetAppContext())
             {
+                // Obtén el ID del cliente seleccionado en el ComboBox
+                int IdCliente = (int)CmbNombre.SelectedValue;
+
                 var nuevaMascota = new Mascota()
                 {
                     Alias = alias,
                     Especie = especie,
                     Raza = raza,
                     ColorPelo = color,
-                    FechaNacimiento = fechaNacimiento
+                    FechaNacimiento = fechaNacimiento,
+                    IdCliente = IdCliente // Asigna el ID del cliente seleccionado
                 };
 
                 db.Mascota.Add(nuevaMascota);
@@ -56,24 +57,13 @@ namespace PetApp
                 MessageBox.Show("Nueva mascota registrada exitosamente.");
             }
 
-
             // Limpia los campos de texto después de guardar la mascota.
             txtAlias.Clear();
             txtespecie.Clear();
             txtRaza.Clear();
             txtColor.Clear();
             dtFechaNacimiento.Value = DateTime.Now;
-                       
-
         }
 
-        #endregion
-
-        private void frmNewPet_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'petAppDataSet.Cliente' table. You can move, or remove it, as needed.
-            this.clienteTableAdapter.Fill(this.petAppDataSet.Cliente);
-
-        }
     }
 }

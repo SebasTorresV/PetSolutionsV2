@@ -44,12 +44,12 @@
             this.CmbNombre = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.petAppDataSet = new PetApp.PetAppDataSet();
+            this.petAppDataSet3 = new PetApp.PetAppDataSet3();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter = new PetApp.PetAppDataSetTableAdapters.ClienteTableAdapter();
+            this.clienteTableAdapter = new PetApp.PetAppDataSet3TableAdapters.ClienteTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.petAppDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petAppDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,7 +169,6 @@
             // 
             // CmbNombre
             // 
-            this.CmbNombre.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.clienteBindingSource, "NombreCompleto", true));
             this.CmbNombre.DataSource = this.clienteBindingSource;
             this.CmbNombre.DisplayMember = "NombreCompleto";
             this.CmbNombre.FormattingEnabled = true;
@@ -197,15 +196,15 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // petAppDataSet
+            // petAppDataSet3
             // 
-            this.petAppDataSet.DataSetName = "PetAppDataSet";
-            this.petAppDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.petAppDataSet3.DataSetName = "PetAppDataSet3";
+            this.petAppDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // clienteBindingSource
             // 
             this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.petAppDataSet;
+            this.clienteBindingSource.DataSource = this.petAppDataSet3;
             // 
             // clienteTableAdapter
             // 
@@ -227,7 +226,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.petAppDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petAppDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -250,8 +249,8 @@
         private System.Windows.Forms.ComboBox CmbNombre;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnGuardar;
-        private PetAppDataSet petAppDataSet;
+        private PetAppDataSet3 petAppDataSet3;
         private System.Windows.Forms.BindingSource clienteBindingSource;
-        private PetAppDataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
+        private PetAppDataSet3TableAdapters.ClienteTableAdapter clienteTableAdapter;
     }
 }
