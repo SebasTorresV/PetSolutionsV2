@@ -20,6 +20,9 @@ namespace PetApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
+            #region Mucho texto de codigo
+
             // Obtén los valores de los campos de texto.
             string username = txtUser.Text;
             string password = txtPass.Text;
@@ -76,6 +79,10 @@ namespace PetApp
                     MessageBox.Show("Usuario o contraseña incorrecta");
                 }
             }
+
+            #endregion
+
+
         }
     }
 }

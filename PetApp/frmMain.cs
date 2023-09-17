@@ -62,5 +62,49 @@ namespace PetApp
         {
 
         }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            #region Mensaje
+            string mensaje = "PetApp - Versión 1.0\n\n" +
+                "Una aplicación para gestionar mascotas y clientes.\n" +
+                "Desarrollado por Benjamin Sebastian Torres Gonzalez.\n\n" +
+                "Alias: Ajolote \n\n" +
+                "Dudede de mi conocimento por un momento, pero la IA me salvó jsjsjs \n\n" +
+                "Contacto: 202102202@gmail.com";
+
+
+            string arteAscii =    "⣿⣿⣿⣿⣿⣏⣾⣟⣿⣻⢯⢷⣟⣞⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                                  "⣿⣿⣿⣿⣟⣼⣯⣿⡽⣯⡻⡷⣽⡽⣧⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                                  "⣿⣿⡿⣹⣾⣿⣿⣿⣻⣷⣻⣟⣾⢿⣯⣿⣾⡻⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                                  "⣟⣿⢾⡿⣷⣿⡻⣿⢽⢯⢿⡽⣟⢿⡳⣿⣻⡿⣮⡽⣿⣿⣿⣿⣿⡟\n" +
+                                  "⢞⠙⢍⠉⠊⠄⠑⡀⠁⠂⠂⠠⠈⠈⢁⠉⠊⠛⠝⢿⣮⣿⣿⣿⣿⡘\n" +
+                                  "⡄⠡⠀⠄⠁⠀⠠⠀⠀⠐⠀⠀⢀⠀⠀⠀⠄⠀⠠⠀⠃⣿⣿⣿⣷⣔\n" +
+                                  "⣦⡵⠀⠐⢄⢂⠀⠐⠀⠀⠁⢀⠀⡈⢀⠀⠁⡀⢐⣵⣿⣿⣿⣿⣿⣿\n" +
+                                  "⣿⣿⠄⣮⢿⡁⢔⣑⢂⠂⡂⠡⡀⢄⠂⡐⣌⢲⣽⢟⡃⣩⣿⣿⣿\n" +
+                                  "⣿⣿⠁⢘⡅⡠⢈⢎⠱⡁⢪⠠⡑⢔⣼⣿⣷⠿⣿⣧⠀⡳⣿⣿⣿\n" +
+                                  "⣿⣿⣿⡶⠠⠑⣔⣅⢔⣡⡪⢊⠐⡩⠺⢻⣿⡟⡡⢘⣷⠈⡽⢿⣿\n" +
+                                  "⣿⣿⣿⣿⣼⣰⣿⣿⣿⢯⡳⢠⠡⢑⢑⢔⠤⠐⢸⣿⣿⠀⡑⠝⢯\n" +
+                                  "⣿⣿⢟⣿⢳⢯⡚⣾⡅⡯⡪⢆⠕⡨⠠⠡⡬⣿⣿⡆⠙⡻⢟⢿⣿\n" +
+                                  "⣿⣿⢪⠃⣴⡇⢊⣿⣏⢞⢕⢣⡪⣲⢝⣞⣵⣏⢙⣷⣀⠑⠢⣑⣿\n" +
+                                  "⣿⣿⡖⢨⣿⣿⣿⣿⣝⣯⢷⣫⣻⣽⡯⣿⢽⡍⡿⣿⣿⣾⡔⣢⣽\n" +
+                                  "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡮⣳⢿⢮⣟⢜⢗⢽⡙⣯⢻⣿⣿⣿⣿\n" +
+                                  "⣿⣿⣿⣿⣿⡿⣻⣫⣮⣻⣋⣾⣝⢿⣼⣿⣽⠫⢮⢣⠙⢼⣿⣿⣿\n" +
+                                  "⣿⣿⣿⣿⣿⣚⠕\n" +
+                                  "Es un meme lic, no se enoje xd";
+
+            
+
+                MessageBox.Show(arteAscii, "Arte ASCII", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+
+
+            #endregion
+
+
+
+            MessageBox.Show(mensaje, "Acerca de PetApp", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
     }
 }

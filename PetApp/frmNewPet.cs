@@ -19,6 +19,8 @@ namespace PetApp
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+
+            #region Otro montón de Texto
             // Obtén los valores ingresados en los campos de texto y controles de fecha.
             string alias = txtAlias.Text;
             string especie = txtespecie.Text;
@@ -71,6 +73,8 @@ namespace PetApp
             txtRaza.Clear();
             txtColor.Clear();
             dtFechaNacimiento.Value = DateTime.Now;
+
         }
+        #endregion
     }
 }
