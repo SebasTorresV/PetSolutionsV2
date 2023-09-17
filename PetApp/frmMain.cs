@@ -52,5 +52,15 @@ namespace PetApp
         {
 
         }
+
+        private void registroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registroDePesoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

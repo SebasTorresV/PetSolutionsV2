@@ -73,21 +73,21 @@
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // mascotaToolStripMenuItem
             // 
             this.mascotaToolStripMenuItem.Name = "mascotaToolStripMenuItem";
-            this.mascotaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mascotaToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.mascotaToolStripMenuItem.Text = "Mascota";
             this.mascotaToolStripMenuItem.Click += new System.EventHandler(this.mascotaToolStripMenuItem_Click);
             // 
@@ -103,14 +103,16 @@
             // registroToolStripMenuItem
             // 
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
-            this.registroToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registroToolStripMenuItem.Text = "Registro de Vacunas";
+            this.registroToolStripMenuItem.Click += new System.EventHandler(this.registroToolStripMenuItem_Click);
             // 
             // registroDePesoToolStripMenuItem
             // 
             this.registroDePesoToolStripMenuItem.Name = "registroDePesoToolStripMenuItem";
-            this.registroDePesoToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.registroDePesoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registroDePesoToolStripMenuItem.Text = "Registro de Peso";
+            this.registroDePesoToolStripMenuItem.Click += new System.EventHandler(this.registroDePesoToolStripMenuItem_Click);
             // 
             // mantenimientoToolStripMenuItem
             // 

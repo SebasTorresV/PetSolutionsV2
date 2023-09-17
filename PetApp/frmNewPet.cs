@@ -52,12 +52,25 @@ namespace PetApp
                 MessageBox.Show("Nueva mascota registrada exitosamente.");
             }
 
+            //using (var db = new PetAppContext())
+            //{
+            //    var ClienteNew = new Cliente()
+            //    {
+            //      NombreCompleto = CbxNombre,
+            //    };
+
+            //    db.Cliente.Add(ClienteNew);
+            //    db.SaveChanges();
+            //}
+
+
+
             // Limpia los campos de texto después de guardar la mascota.
             txtAlias.Clear();
             txtespecie.Clear();
             txtRaza.Clear();
             txtColor.Clear();
-            dtFechaNacimiento.Value = DateTime.Now; 
+            dtFechaNacimiento.Value = DateTime.Now;
         }
     }
 }

@@ -40,7 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtAlias = new System.Windows.Forms.MaskedTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CbxNombre = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -151,7 +151,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.CbxNombre);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Location = new System.Drawing.Point(0, 244);
@@ -161,13 +161,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos del Cliente";
             // 
-            // comboBox1
+            // CbxNombre
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 49);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(305, 21);
-            this.comboBox1.TabIndex = 6;
+            this.CbxNombre.FormattingEnabled = true;
+            this.CbxNombre.Location = new System.Drawing.Point(13, 49);
+            this.CbxNombre.Name = "CbxNombre";
+            this.CbxNombre.Size = new System.Drawing.Size(305, 21);
+            this.CbxNombre.TabIndex = 6;
             // 
             // label6
             // 
@@ -221,7 +221,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtFechaNacimiento;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CbxNombre;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnGuardar;
     }
