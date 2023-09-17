@@ -109,6 +109,16 @@
     <Compile Include="Pesos.cs">
       <DependentUpon>PetAppModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="PetAppDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PetAppDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PetAppDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PetAppDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PetAppModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,6 +177,28 @@
       <LastGenOutput>PetAppModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="packages.config" />
+    <None Include="PetAppDataSet.xsc">
+      <DependentUpon>PetAppDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PetAppDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PetAppDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PetAppDataSet.xss">
+      <DependentUpon>PetAppDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PetAppDataSet1.xsc">
+      <DependentUpon>PetAppDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PetAppDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PetAppDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PetAppDataSet1.xss">
+      <DependentUpon>PetAppDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="PetAppModel.edmx.diagram">
       <DependentUpon>PetAppModel.edmx</DependentUpon>
     </None>

@@ -37,5 +37,12 @@ namespace PetApp
             btnEditar.Text = "Editar";
         
     }
+
+        private void frmMantoUsuarios_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'petAppDataSet1.Usuarios' table. You can move, or remove it, as needed.
+            this.usuariosTableAdapter.Fill(this.petAppDataSet1.Usuarios);
+
+        }
     }
 }
